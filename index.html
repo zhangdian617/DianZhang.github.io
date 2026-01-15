@@ -4,7 +4,7 @@ title: ZhangDian (张滇)
 permalink: /
 ---
 
-<!-- 顶部个人信息区（添加Google Scholar链接+加宽适配） -->
+<!-- 顶部个人信息区 -->
 <div style="display: flex; align-items: center; margin-bottom: 40px; gap: 25px; flex-wrap: wrap;">
     <img src="assets/img/zhangdian.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 0; object-fit: cover;">
     <div>
@@ -14,7 +14,7 @@ permalink: /
         <p style="margin: 5px 0; font-size: 1.05em; color: #444444;">
             Email: zhangdian@ln.edu.hk | 
             GitHub: <a href="https://github.com/zhangdian617" style="color: #0000EE; text-decoration: none;">github.com/zhangdian617</a> |
-            Google Scholar: <a href="你的Google Scholar链接" style="color: #0000EE; text-decoration: none;">https://scholar.google.com/citations?user=tiE0IDMAAAAJ&hl=zh-CN</a>
+            Google Scholar: <a href="https://scholar.google.com/citations?user=tiE0IDMAAAAJ&hl=zh-CN" style="color: #0000EE; text-decoration: none;">scholar.google.com/citations?user=tiE0IDMAAAAJ&hl=zh-CN</a>
         </p>
     </div>
 </div>
@@ -37,7 +37,7 @@ permalink: /
     <li><strong style="color: #222222;">I am currently looking for outstanding post-doctoral and graduate students, who are interested in my research area! Please contact me by email!</strong></li>
 </ul>
 
-<!-- 新增 Awards and Achievements 板块 -->
+<!-- Awards and Achievements 板块 -->
 ## Awards and Achievements
 <ul style="list-style: none; padding: 0; line-height: 1.7; color: #444444; font-size: 1.05em;">
     <li><strong style="color: #333333;">2024</strong> | Research Award, 38th Annual Scientific Meeting International Association for Dental Research (IADR) Southeast Asia Division (国际牙科研究协会是全球口腔医学与牙科研究领域最具影响力的非营利学术组织)</li>
@@ -46,7 +46,7 @@ permalink: /
     <li><strong style="color: #333333;">2019</strong> | China Pacific Insurance Research Achievement Award</li>
 </ul>
 
-<!-- Publications 模块（参考页核心） -->
+<!-- Publications 模块 -->
 ## Publications
 ### Journal Papers
 <ol style="line-height: 1.7; color: #444444; font-size: 1.05em; padding-left: 20px;">
@@ -67,73 +67,79 @@ permalink: /
     <li style="margin-left: 25px;">Description: Brief project description (what you did, key outcomes).</li>
 </ul>
 
-<!-- Experience 模块（可选） -->
+<!-- Experience 模块 -->
 ## Experience
 <ul style="list-style: none; padding: 0; line-height: 1.7; color: #444444; font-size: 1.05em;">
     <li><strong style="color: #333333;">20XX.07 - 20XX.09</strong> | Research Intern, XXXX Lab, XXXX Company</li>
     <li style="margin-left: 25px;">Responsibilities: XXXX</li>
 </ul>
 
-<!-- 样式微调：加宽页面+保持层次感 -->
+<!-- 核心修改：强制覆盖模板默认样式 -->
 <style>
-    /* 加宽页面宽度，从920px改为1200px，适配更大屏幕 */
+    /* 1. 强制修改模板核心容器（.container）的宽度（关键！） */
+    .container {
+        max-width: 95vw !important;  /* 强制占屏幕95%宽度 */
+        min-width: 800px !important;
+        padding: 0 15px !important;  /* 清除容器默认内边距 */
+        margin: 0 auto !important;
+    }
+
+    /* 2. 强化body样式，防止被覆盖 */
     body {
-        font-family: "Times New Roman", Times, serif;
-        max-width:  95vw; /* 关键修改：加宽页面 */
-        min-width: 800px;
-        margin: 0 auto;
-        padding: 25px 15px; /* 左右内边距增大，优化宽屏显示 */
-        background-color: #ffffff;
-        color: #444444;
+        font-family: "Times New Roman", Times, serif !important;
+        max-width: 95vw !important;
+        min-width: 800px !important;
+        margin: 0 auto !important;
+        padding: 25px 15px !important;
+        background-color: #ffffff !important;
+        color: #444444 !important;
     }
 
-    /* 模块标题（h2）：参考页的下划线+深灰+间距 */
+    /* 模块标题样式不变 */
     h2 {
-        color: #333333;
-        border-bottom: 1px solid #dddddd;
-        padding-bottom: 6px;
-        margin-top: 40px;
-        margin-bottom: 18px;
-        font-size: 1.6em;
-        font-weight: 700;
+        color: #333333 !important;
+        border-bottom: 1px solid #dddddd !important;
+        padding-bottom: 6px !important;
+        margin-top: 40px !important;
+        margin-bottom: 18px !important;
+        font-size: 1.6em !important;
+        font-weight: 700 !important;
     }
 
-    /* 子标题（h3，如Journal Papers）：弱化但有层级 */
     h3 {
-        color: #333333;
-        font-size: 1.2em;
-        font-weight: 600;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        margin-left: 5px;
+        color: #333333 !important;
+        font-size: 1.2em !important;
+        font-weight: 600 !important;
+        margin-top: 15px !important;
+        margin-bottom: 10px !important;
+        margin-left: 5px !important;
     }
 
-    /* 链接样式：匹配参考页的纯蓝色，无默认下划线 */
+    /* 链接样式 */
     a {
-        color: #0000EE;
-        text-decoration: none;
+        color: #0000EE !important;
+        text-decoration: none !important;
     }
     a:hover {
-        color: #551A8B;
+        color: #551A8B !important;
     }
 
-    /* 修正列表缩进，避免溢出 */
     ul, ol {
-        margin: 0;
+        margin: 0 !important;
     }
 
-    /* 强调文本（strong）统一深灰，避免过黑 */
     strong {
-        font-weight: 600;
+        font-weight: 600 !important;
     }
 
-    /* 斜体文本（期刊/会议名）浅灰，弱化但可区分 */
     em {
-        font-style: italic;
+        font-style: italic !important;
     }
+
+    /* 超大屏适配 */
     @media screen and (min-width: 1920px) {
-        body {
-            max-width: 1800px;
+        .container, body {
+            max-width: 1800px !important;
         }
     }
 </style>
