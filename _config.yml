@@ -1,0 +1,35 @@
+# 基础站点配置
+title: Your Name
+tagline: 
+description: Personal Homepage
+url: "https://你的用户名.github.io"
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Shanghai
+
+# 个人信息（仅保留必要项）
+name: Your Name
+avatar: /images/avatar.jpg
+email: your-email@example.com
+github_username: 你的用户名
+twitter_username: ""
+linkedin_username: ""
+
+# 核心样式配置（关闭所有多余功能）
+navbar_links:
+  - {name: Home, url: /}  # 仅保留首页导航，匹配参考页的极简导航
+
+# 关闭Beautiful Jekyll的默认装饰
+show_social_icons: false
+show_excerpts: false
+show_tags: false
+show_date: false
+theme_mode: light  # 强制浅色模式，匹配参考页
+footer_text: ""    # 隐藏页脚文字
+
+# 其他默认配置（无需修改）
+markdown: kramdown
+remote_theme: daattali/beautiful-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
