@@ -40,9 +40,7 @@ permalink: /
 <!-- 新增 Awards and Achievements 板块 -->
 ## Awards and Achievements
 <ul style="list-style: none; padding: 0; line-height: 1.7; color: #444444; font-size: 1.05em;">
-    <li><strong style="color: #333333;">2024</strong> | Research Award, 38th Annual Scientific Meeting International Association for Dental
-Research (IADR) Southeast Asia Division (国际牙科研究协会是全球口腔医学与牙科研究
-领域最具影响力的非营利学术组织)</li>
+    <li><strong style="color: #333333;">2024</strong> | Research Award, 38th Annual Scientific Meeting International Association for Dental Research (IADR) Southeast Asia Division (国际牙科研究协会是全球口腔医学与牙科研究领域最具影响力的非营利学术组织)</li>
     <li><strong style="color: #333333;">2015</strong> | Shenzhen Peacock Talent Award</li>
     <li><strong style="color: #333333;">2013</strong> | IBM Faculty Award</li>
     <li><strong style="color: #333333;">2019</strong> | China Pacific Insurance Research Achievement Award</li>
@@ -81,9 +79,10 @@ Research (IADR) Southeast Asia Division (国际牙科研究协会是全球口腔
     /* 加宽页面宽度，从920px改为1200px，适配更大屏幕 */
     body {
         font-family: "Times New Roman", Times, serif;
-        max-width: 1200px; /* 关键修改：加宽页面 */
+        max-width:  95vw; /* 关键修改：加宽页面 */
+        min-width: 800px;
         margin: 0 auto;
-        padding: 25px 50px; /* 左右内边距增大，优化宽屏显示 */
+        padding: 25px 15px; /* 左右内边距增大，优化宽屏显示 */
         background-color: #ffffff;
         color: #444444;
     }
@@ -131,5 +130,10 @@ Research (IADR) Southeast Asia Division (国际牙科研究协会是全球口腔
     /* 斜体文本（期刊/会议名）浅灰，弱化但可区分 */
     em {
         font-style: italic;
+    }
+    @media screen and (min-width: 1920px) {
+        body {
+            max-width: 1800px;
+        }
     }
 </style>
